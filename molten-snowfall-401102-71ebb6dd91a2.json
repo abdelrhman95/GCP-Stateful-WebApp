@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "molten-snowfall-401102",
+  "private_key_id": "71ebb6dd91a2ca5395f1f64bc7d23ac48e976b77",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCR0EIb2wysOC1T\njXcUhq1TRDkIdR4LAAM5xFQQ5uLzLNtEt/mu5SNJS0hDOHEhAur3ohP1ssaRNIrd\nFAvVZgWM70hFXpFxVHTeyamdnUsyw37qTnLzXZB7OpAHNh5Oasn46194oHEZIqEQ\nclz51P0aOXrQ0yK/EOov6umY3kX84exeb1AzK2Ofd4a+dsH/+A1r4zRcxZyFrb3e\nZTn2Ropsr6EjPcM125ilrQRaauOE9DytxSZHymnrPaI9x7ngUBvC2eInNXByW9xA\njOM/9EupoipzUHzTTuVEoKDtJyrpg6l9heEI4B7A+/8fvFDJHNikLoO+ymujNyvj\nwQs7XFFLAgMBAAECggEAQYrVtHS1kRIdWbG8hZb2APgpFMKkMviZ+pTj3scR25Hd\nq9lwm6t2vYLf5AtSWq7XlGEfzLDD7dAq3S4eFZmqxAtotnnIMaNvdxc5rVXfT92t\nRj/mDruPbrzHsd4jKEd7Ku8N9ohT3iMBOAXYAhq5fFi6+nP1aeH+CnTy9Jpw5jav\nTufzkgIxPaN7kP9IeHinUfG+b3/JTRysXki8DYp4nugzMSnHPPWEEcbOxZL9kRY1\ng0JJAIg6Vz1uFZc/Nt6JVwVjKXpTZgO89ZbMaNmDd1RB43oDxMrgNfRBQKAjOibS\nW6+pzzSyXGJCZ9pcy68cOBd8ren1FzSt++hkeWq0UQKBgQDMx7fW1xJZGYUJYRg0\nej65H38VAXwXuUd3D8My6B6JTLrvWAtCXzBlcpt5haN0rX+2fRlLbUARzLpoJTLq\nLLKU7UZsaEitx4FiEDeHFtPrMArBOGl7L/6YqZOvhcLDlw7LB8p4p//d1KnmQeUa\ncHs4n2kC+aCfQCZcAJE2unXIUQKBgQC2SNiSI+MrHyGyiA+sF50hpZLZxsYz965l\ni3PXMi5mIuYmjmw0/ir1ZqeRwQGunkaR0EOa53Xx8c22S8oqnPDBU9RZF1AZXLSo\nZoBimUqbwsUFBpsLFfq/pdyIUH6XwAEwfaqAQYAAHqLHWOVS6RSdUY5lahAUaOzD\ndJMmvHG02wKBgBF4TFe4u2j8g1v8e4smjqlOZZIOMV74wH8IyjdSlCBUenImybcc\n1c0hzN++JeazUnzoCTtlE50xIQn3enN94rJP170x3Flu9ru99G7C5Mtgqto3DNCk\nlIzDksTbnXUAMxPhE0Xd1zc+iEwLfRcXV3vKJbRKRYiweVVJ+xl3KMsxAoGAUYrS\nvsUpCRA7Hcc5440IsJWF1L/TyEmDDU/NuTVshioUdKj/hNEyXGbYjR4e54NMJExb\nAb+LBnlZwbOzs05TcNhURKpmHYJYGoEH65ORSY5eXjovP01Mx1CmD6CakL3Gim+c\nxxUF8ofB35VHuMglfZ6PKZTBrq+lQmYysYBZCUMCgYB/dCt3Qr/2FEXxPsLLy3CP\nq0H+U0rfkaLUAYCyf8b3406Odaw5n+YYGFbGPgcdk1Zp3bM3dtqtMopByPpaOmDE\nMjv9Ohd+xkG0qdaeRoJAj/a3LVoW1lWyiVlF6X9Ms016ZRCqhEONuKyhe4Tfryfg\ntl8Kl7FH1F0WAQwo9YBdkg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform-confog@molten-snowfall-401102.iam.gserviceaccount.com",
+  "client_id": "117827390568768800684",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-confog%40molten-snowfall-401102.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
