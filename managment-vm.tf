@@ -1,13 +1,13 @@
 resource "google_compute_instance" "vm" {
-  name         = "managment-vm"
-  machine_type = "e2-micro"
-  zone         = "us-east1-b"
+  name         = var.vm-name
+  machine_type = var.machine_type
+  zone         = var.machine_zone
 
   tags = ["private-vm"] # instance network tag
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
+      image = var.machine_image
     }
 
     
@@ -15,14 +15,16 @@ resource "google_compute_instance" "vm" {
  
 
   network_interface {
-    subnetwork = google_compute_subnetwork.managment_subnet.self_link
+    subnetwork = module.network.managment_subnet_name
   }
 
 
   service_account {
-    email = google_service_account.gke_artifact_sa.email
+    email = module.serviceaccount.serviceaccount_gke_artifact_sa_email
     scopes = ["cloud-platform"]
   }
+
+  #metadata_startup_script =     #put your the script file here
 
 
   
