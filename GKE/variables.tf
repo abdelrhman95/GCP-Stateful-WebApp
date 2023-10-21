@@ -12,11 +12,6 @@ variable "workload_subnet_name" {
   type = string
 }
 
-
-variable "workload_subnet_cidr" {
-  type = string
-}
-
 variable "serviceaccount_gke_sa_email" {
   type = string
 }
@@ -25,7 +20,7 @@ variable "serviceaccount_gke_sa_email" {
 
 variable "gke_location" {
   type = string
-  default = "us-east1"
+  default = "asia-east1"
 }
 
 variable "networking_mode" {
@@ -55,10 +50,16 @@ variable "node_machine_type" {
 }
 variable "node_count" {
   type = number
-  default = 3
+  default = 1
 }
 
 variable "max_pods_per_node" {
   type = number
-  default = 100
+  default = 50
+}
+
+variable "disk_type" {
+  type = string
+  default = "pd-standard"
+  
 }

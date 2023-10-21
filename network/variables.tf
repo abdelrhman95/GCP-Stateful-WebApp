@@ -21,7 +21,7 @@ variable "workload_subnet_cider" {
 
 variable "vpc-region" {
     type= string
-    default = "us-east1"
+    default = "asia-east1"
   
 }
 

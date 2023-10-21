@@ -12,7 +12,8 @@ resource "google_container_node_pool" "node_pool" {
     node_config {
       preemptible = true
       machine_type = var.node_machine_type
-
+      disk_size_gb = 10
+      disk_type = var.disk_type
     #Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
       service_account = var.serviceaccount_gke_sa_email
       oauth_scopes = ["https://www.googleapis.com/auth/cloud-platform"]
@@ -21,7 +22,7 @@ resource "google_container_node_pool" "node_pool" {
 
     max_pods_per_node = var.max_pods_per_node
 
-    node_locations = ["us-east1-b","us-east1-d", "us-east1-c"]
+    node_locations = ["asia-east1-a","asia-east1-b", "asia-east1-c"]
 
 
   

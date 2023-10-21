@@ -1,5 +1,5 @@
 project_id = "molten-snowfall-401102"
-region = "us-east1"
-machine_zone = "us-east1-b"
+region = "asia-east1"
+machine_zone = "asia-east1-b"
 machine_type = "e2-micro"
 machine_image = "debian-cloud/debian-11"
