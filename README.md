@@ -28,5 +28,39 @@ on GCP:
  *  kubectl
 
 ## Steps 
+* Build application image by docker file and push to artifact registry 
+![image](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/f481d415-7727-46e9-94dd-32785aa1cbd3)
+
+* Initialize infra using terraform
+   ```sh
+   terraform init
+   terraform plan
+   terraform apply --auto-approve
+   ```
+    - after applying it should return that your infra have completed
+       ![image](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/ff16f2f6-43c7-4356-ab74-9b476c76ae4a)
+      
+* After creating the GCP architecture we have to ssh to private-vm  through IAP
+   ```sh
+  gcloud compute ssh [vm-name] --tunnel-through-iap --zone=[zone-name] --project=[project-id]
+  ```
+* Once you connect to you private vm, you can access GKE Cluster
+   ```sh
+   gcloud container clusters get-credentials [cluster-name] --zone [zone-name] --project [project-id]
+   ```
+  - Deploy MongoDB (stateful)
+  - Deploy Node.js app
+  - Deploy LoadBalancer service
+
+*  Results
+   ![k8s](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/d49b1c08-0071-4281-bfe1-564055d16753)
+
+      ``` sh
+      curl EXTERNAL_IP:PORT
+      ```
+      ![running application through load balancer](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/5eaaaf4c-0292-42a4-9100-cd56d9c91eef)
+
+
+
 
 
