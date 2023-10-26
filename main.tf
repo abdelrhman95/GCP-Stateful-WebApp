@@ -1,3 +1,6 @@
+module "enable-apies" {
+  source = "./API_GCP"
+}
 module "network" {
     # i have defined defaults values for every variables 
     source = "./network"

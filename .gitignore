@@ -1,2 +1,4 @@
-.terraform*
-*.json
+molten-snowfall-401102-972c349f4666.json
+terraform.tfstate
+terraform.tfstate.backup
+.terraform

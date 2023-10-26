@@ -18,6 +18,7 @@ variable "serviceaccount_gke_sa_email" {
 
 
 
+
 variable "gke_location" {
   type = string
   default = "asia-east1"
@@ -27,6 +28,11 @@ variable "networking_mode" {
   type = string
   default = "VPC_NATIVE"
 }
+variable "managment_subnet_cider" {
+  type = string
+  default = "10.0.1.0/24"
+}
+
 
 variable "release_channel" {
   type = string

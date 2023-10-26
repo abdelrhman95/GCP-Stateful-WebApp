@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deploy
+  labels:
+    app: my-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: app-container
+        image: asia-east1-docker.pkg.dev/molten-snowfall-401102/my-repository/node.js-app:v0
+        ports:
+        - containerPort: 3000
+        env:
+        - name: DBuser
+          value: admin
+        
+        - name: DBpass
+          value: password
+        
+        - name: DBhosts
+          value: mongo-0.mongo:27017,mongo-1.mongo:27017,mongo-2.mongo:27017
+
+          

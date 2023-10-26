@@ -23,8 +23,9 @@ resource "google_compute_instance" "vm" {
     email = module.serviceaccount.serviceaccount_gke_artifact_sa_email
     scopes = ["cloud-platform"]
   }
-
-  #metadata_startup_script =     #put your the script file here
+  
+  #put your script file here
+  metadata_startup_script = file("./startup-script.sh")     
 
 
   
