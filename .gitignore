@@ -1,4 +1,7 @@
 molten-snowfall-401102-972c349f4666.json
-terraform.tfstate
+*.tfstate
+.terraform/
+.terraform.lock.hcl
 terraform.tfstate.backup
-.terraform
+terraform.tfstate.d/
+terraform.tfstate
