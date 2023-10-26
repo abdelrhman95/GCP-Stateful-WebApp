@@ -18,7 +18,8 @@ on GCP:
 
 
 ## Architecture
-![Screenshot from 2023-10-26 20-43-58](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/399f1236-4692-46ac-8386-1d676d06fece)
+![Screenshot from 2023-10-26 20-43-58](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/1330e1ff-220e-4a6d-a8aa-c79460a17823)
+
 
 
 ## Prerequisites
@@ -29,7 +30,8 @@ on GCP:
 
 ## Steps 
 * Build application image by docker file and push to artifact registry 
-![image](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/f481d415-7727-46e9-94dd-32785aa1cbd3)
+![Screenshot from 2023-10-26 21-10-47](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/f6615458-fa09-4fee-a3da-0cfd0979e713)
+
 
 * Initialize infra using terraform
    ```sh
@@ -37,8 +39,9 @@ on GCP:
    terraform plan
    terraform apply --auto-approve
    ```
-    - after applying it should return that your infra have completed
-       ![image](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/ff16f2f6-43c7-4356-ab74-9b476c76ae4a)
+    - after applying it should return that your infra has been completed
+      ![Screenshot from 2023-10-26 21-19-14](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/29ac103a-00ba-42f8-b48f-97357ec69eca)
+
       
 * After creating the GCP architecture we have to ssh to private-vm  through IAP
    ```sh
@@ -52,13 +55,16 @@ on GCP:
   - Deploy Node.js app
   - Deploy LoadBalancer service
 
-*  Results
-   ![k8s](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/d49b1c08-0071-4281-bfe1-564055d16753)
+## Results
+
+*  ![k8s](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/6e816740-4c02-44b8-a3aa-b113c3e91d87)
+
 
       ``` sh
       curl EXTERNAL_IP:PORT
       ```
-      ![running application through load balancer](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/5eaaaf4c-0292-42a4-9100-cd56d9c91eef)
+      ![running application through load balancer](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/04ad243e-1dc5-4f5b-bf02-41aea8893232)
+
 
 
 
