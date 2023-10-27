@@ -5,3 +5,5 @@ molten-snowfall-401102-972c349f4666.json
 terraform.tfstate.backup
 terraform.tfstate.d/
 terraform.tfstate
+.terraform*
+*.tfstate*
