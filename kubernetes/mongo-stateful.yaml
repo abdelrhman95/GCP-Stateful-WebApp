@@ -19,9 +19,15 @@ spec:
           image: asia-east1-docker.pkg.dev/molten-snowfall-401102/my-repository/mongo
           env:
             - name: MONGO_INITDB_ROOT_USERNAME
-              value: "admin"
+              valueFrom: 
+                secretKeyRef:  
+                  name: mongodb-secret
+                  key: username 
             - name: MONGO_INITDB_ROOT_PASSWORD
-              value: "password"
+              valueFrom:
+                secretKeyRef:
+                  name: mongodb-secret
+                  key: password
             - name: MONGO_INITDB_DATABASE
               value: "test"
           command:
