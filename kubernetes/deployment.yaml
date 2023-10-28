@@ -21,12 +21,16 @@ spec:
         - containerPort: 3000
         env:
         - name: DBuser
-          value: admin
+          valueFrom:
+            secretKeyRef:
+              name: app-secret
+              key: username
+          
         
         - name: DBpass
-          value: password
-        
-        - name: DBhosts
-          value: mongo-0.mongo:27017,mongo-1.mongo:27017,mongo-2.mongo:27017
+          valueFrom:
+            secretKeyRef:
+              name: app-secret
+              key: password
 
           
