@@ -3,6 +3,10 @@ output "vpc-name" {
   
 }
 
+output "vpc-id" {
+  value = google_compute_network.my-vpc.project
+}
+
 output "managment_subnet_name" {
   value = google_compute_subnetwork.managment_subnet.name
 }
