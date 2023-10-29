@@ -10,7 +10,7 @@ variable "machine_type" {
 
 variable "machine_zone" {
   type = string
-  default = "asia-east1-b"
+  default = "us-central1-b"
 }
 
 variable "machine_image" {
