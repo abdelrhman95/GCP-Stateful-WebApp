@@ -30,3 +30,13 @@ variable "nat_ip_allocate_option" {
     default = "AUTO_ONLY"
   
 }
+
+variable "managment-subnet-region" {
+  type=string
+  default="us-central1"
+}
+
+variable "workload-subnet-region" {
+  type = string
+  default = "asia-east1"
+}
