@@ -15,6 +15,7 @@ resource "google_compute_instance" "vm" {
  
 
   network_interface {
+    network = module.network.vpc-name
     subnetwork = module.network.managment_subnet_name
   }
 
