@@ -26,7 +26,7 @@ resource "google_compute_instance" "vm" {
   }
   
   #put your script file here
-  metadata_startup_script = file("./startup-script.sh")     
+  metadata_startup_script = "${file("./startup-script.sh")}"  
 
 
   
