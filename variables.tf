@@ -34,6 +34,10 @@ variable "region" {
   default = "asia-east1"
 }
 
+variable "gcp-sa-key"{
+type = string
+default = "secret/gcp-sa-key.json"
+}
 
 
 
