@@ -31,6 +31,11 @@ variable "nat_ip_allocate_option" {
   
 }
 
+variable "project_id" {
+  type = string
+  default = "molten-snowfall-401102"
+}
+
 variable "managment-subnet-region" {
   type=string
   default="us-central1"
