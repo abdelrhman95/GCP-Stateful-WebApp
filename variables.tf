@@ -15,7 +15,7 @@ variable "machine_zone" {
 
 variable "machine_image" {
   type = string
-  default = "debian-cloud/debian-11"
+  default = "ubuntu-os-cloud/ubuntu-2004-lts"
 }
 
 
