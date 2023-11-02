@@ -29,18 +29,19 @@ sudo apt-get update && sudo apt-get install google-cloud-cli
 sudo apt-get install google-cloud-cli-gke-gcloud-auth-plugin
 gcloud init
 
-# Kubectl Installation
-# sudo apt-get update
-# sudo apt-get install -y apt-transport-https ca-certificates curl
-# sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
-# echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-# sudo apt-get update
-# sudo apt-get install -y kubectl
 sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
-sudo apt-get install kubectl
+
+# Kubectl Installation
+sudo apt-get update
+sudo apt-get install -y apt-transport-https ca-certificates curl
+sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+sudo apt-get update
+sudo apt-get install -y kubectl
 
 
 
+sudo apt-get update
 
 #credentials of gke
 gcloud container clusters get-credentials my-gke-cluster --zone asia-east1 --project "molten-snowfall-401102"
