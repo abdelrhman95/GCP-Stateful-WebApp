@@ -36,8 +36,9 @@ gcloud init
 # echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 # sudo apt-get update
 # sudo apt-get install -y kubectl
-sudo apt-get install kubectl
 sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
+sudo apt-get install kubectl
+
 
 
 
