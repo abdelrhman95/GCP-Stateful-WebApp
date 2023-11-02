@@ -5,7 +5,7 @@ variable "vm-name" {
 
 variable "machine_type" {
   type = string
-  default = "e2-micro"
+  default = "e2-medium"
 }
 
 variable "machine_zone" {
