@@ -1,36 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-deploy
+  name: deploy-app
   labels:
-    app: my-app
+    app: my-webapp
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: my-app
+      app: my-webapp
   template:
     metadata:
       labels:
-        app: my-app
+        app: my-webapp
     spec:
       containers:
       - name: app-container
-        image: asia-east1-docker.pkg.dev/molten-snowfall-401102/my-repository/node.js-app:v0
+        image: asia-east1-docker.pkg.dev/molten-snowfall-401102/my-repository/python-app:1.1
         ports:
-        - containerPort: 3000
-        env:
-        - name: DBuser
-          valueFrom:
-            secretKeyRef:
-              name: app-secret
-              key: username
-          
-        
-        - name: DBpass
-          valueFrom:
-            secretKeyRef:
-              name: app-secret
-              key: password
-
-          
+        - containerPort: 8000
