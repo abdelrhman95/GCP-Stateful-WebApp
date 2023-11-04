@@ -26,7 +26,7 @@ resource "google_container_cluster" "primary" {
      private_cluster_config {
        
        #this field only applies to private clusters
-       enable_private_endpoint = true 
+       enable_private_endpoint = False
        enable_private_nodes = true  #creating a private endpoint on the cluster.
        master_ipv4_cidr_block = var.private_cluster_ip
        master_global_access_config {
@@ -37,8 +37,9 @@ resource "google_container_cluster" "primary" {
 
      master_authorized_networks_config {
        cidr_blocks {
-         cidr_block = var.managment_subnet_cider
+         cidr_block = "0.0.0.0/0" #var.managment_subnet_cider
          display_name = "ip-cider-managmentsubnet"
+
        }
      }
 
