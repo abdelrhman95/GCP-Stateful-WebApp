@@ -1,23 +1,23 @@
-FROM python:3.9-alpine
-# cd app
+# specify the node base image with your desired version node:<version>
+FROM node:20-slim
+
+#make app directory inside contianer [cd app]
 WORKDIR /app
-# Copy from my local to /app inside the container
-COPY . ./
 
-# Install Requirements and redis 
-RUN pip install -r requirements.txt
-RUN apk --update add redis
 
-# Expose appliaction in port 8000
-EXPOSE 8000
+#copy packges from local to container inside /app
+COPY package.json .
 
-# Set Environment Variables 
-ENV REDIS_HOST=localhost
-ENV REDIS_PORT=6379
-ENV REDIS_DB=0
-ENV HOST=localhost
-ENV PORT=8000
-ENV ENVIRONMENT=DEV
 
-# run the 
-CMD [ "sh","initial.sh" ]
+#Install requriments and dependcies 
+RUN npm install
+
+#copy source code 
+COPY . .
+
+#expose app on port 3000
+EXPOSE 3000
+
+
+#start the server
+CMD [ "node","index.js" ]
