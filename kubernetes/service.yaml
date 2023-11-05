@@ -3,13 +3,11 @@ kind: Service
 metadata:
     name: my-service
     labels:
-      app: my-webapp
-    annotations:
-        cloud.google.com/load-balancer-type: "External"
+      app: my-app
 spec:
   type: LoadBalancer
   selector:
-    app: my-webapp
+    app: my-app
   ports:
-    - port: 8000
-      targetPort: 8000
+    - port: 3000
+      targetPort: 3000 
