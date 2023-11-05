@@ -12,7 +12,7 @@ on GCP:
   - 
 * Deploy the MongoDB replicaset across the 3 zones
 
-* Dockerize and Deploy the Node.js web app that will connect to the 3 DB replicas.
+* Dockerize and Deploy the Node.js web app connected to the 3 DB replicas.
 
 * Expose the web app using ingress/load balancer.
 
@@ -33,7 +33,7 @@ on GCP:
 ![Screenshot from 2023-10-26 21-10-47](https://github.com/abdelrhman95/GCP-Terraform-Node.jsApp/assets/58826560/f6615458-fa09-4fee-a3da-0cfd0979e713)
 
 
-* Initialize infra using terraform
+* Initialize infra using Terraform
    ```sh
    terraform init
    terraform plan
@@ -47,7 +47,7 @@ on GCP:
    ```sh
   gcloud compute ssh [vm-name] --tunnel-through-iap --zone=[zone-name] --project=[project-id]
   ```
-* Once you connect to you private vm, you can access GKE Cluster
+* Once you connect to your private VM, you can access the GKE Cluster
    ```sh
    gcloud container clusters get-credentials [cluster-name] --zone [zone-name] --project [project-id]
    ```
