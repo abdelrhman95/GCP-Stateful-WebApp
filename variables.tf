@@ -26,7 +26,7 @@ variable "backend-bucket" {
 
 variable "project_id" {
   type = string
-  default = "molten-snowfall-401102"
+  default = "project-id"
 }
 
 variable "region" {
